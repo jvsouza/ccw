@@ -1,6 +1,11 @@
 # CCW
 Repository with references, documentation and proposed solution for the Completion of Course Work (CCW)
 
+![Progress](https://progress-bar.dev/1/?title=Completed%20&width=160&color=54aeff)
+
+> [As specified by IFSC](https://sigaa.ifsc.edu.br/sigaa/verProducao?idProducao=361773&key=b0753324de8a4266395e87af40c58f2e#:~:text=O%20trabalho%20acad%C3%AAmico%20digital%20precisa,ano%20de%20apresenta%C3%A7%C3%A3o%20do%20trabalho.&text=Fonte%3A%20Elabora%C3%A7%C3%A3o%20pr%C3%B3pria%20(2018)), the CCW (Completion of Course Work) is partial requirement for obtaining the title of electronic engineer.
+
+
 ## Brief structure of folders and files
 ```text
 
