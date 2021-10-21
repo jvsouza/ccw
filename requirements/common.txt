@@ -7,5 +7,5 @@ django-active-link==0.1.8
 django-compressor==2.4.1
 rcssmin==1.0.6 --install-option="--without-c-extensions"
 cssmin==0.2.0
-rjsmin==1.1.0 --install-option="--without-c-extensions"
+rjsmin==1.1.0
 jsmin==3.0.0
