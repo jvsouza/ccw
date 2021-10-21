@@ -1,0 +1,17 @@
+{% extends "layout/error.html" %}
+{% block title %}Error[400]{% endblock %}
+{% load static %}
+
+{% block stylesheets %}
+    <link href="{% static 'css/custom_error.css' %}" rel="stylesheet" type="text/css" />
+{% endblock stylesheets %}
+
+{# ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- #}
+
+{% block main %}
+
+    <h1>400</h1>
+    <h2>Oops! Access denied</h2>
+    <p>Sorry but the page you are looking for does not exist, have been removed, name changed or is temporarily unavailable.</p>
+
+{% endblock %}

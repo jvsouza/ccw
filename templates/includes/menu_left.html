@@ -1,0 +1,24 @@
+{% load active_link_tags %}
+
+<!-- Sidebar -->
+<ul id="menu_left" class="navbar-nav sidebar sidebar-dark accordion pt-5" id="accordionSidebar">
+
+    <li class="nav-item {% active_link 'actionDashboard' %}">
+        <a class="nav-link" href="{% url 'actionDashboard' %}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+    </li>
+
+    <li class="nav-item {% active_link 'actionCharts'  %}">
+        <a class="nav-link" href="{% url 'actionCharts' %}">
+            <i class="fas fa-fw fa-chart-line"></i>
+            <span>Charts</span></a>
+    </li>
+
+    <li class="nav-item {% active_link 'actionTables' %}">
+        <a class="nav-link" href="{% url 'actionTables' %}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Tables</span></a>
+    </li>
+
+</ul>

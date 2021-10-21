@@ -1,0 +1,46 @@
+{% load static %}
+{% load compress %}
+
+{# ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- #}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        {% include 'includes/metatags.html' %}
+		<title>{% block title %} {% endblock %} :: App</title>
+
+        <!-- Css -->
+        {% compress css %}
+        	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+			{% block stylesheets %} {% endblock stylesheets %}
+        {% endcompress %}
+
+	    <!-- Fonts -->
+	    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700" rel="stylesheet" />
+
+		<!-- Icons -->
+		<link href="{% static 'icon/fontawesome-free/css/all.min.css'  %}" rel="stylesheet" type="text/css" />
+	    
+        <!-- Favicon -->
+        <link href="{% static 'images/favicon/favicon_16.png'  %}" sizes="16x16"   rel="icon" />
+        <link href="{% static 'images/favicon/favicon_32.png'  %}" sizes="32x32"   rel="icon" />
+        <link href="{% static 'images/favicon/favicon_64.png'  %}" sizes="64x64"   rel="icon" />
+        <link href="{% static 'images/favicon/favicon_128.png' %}" sizes="128x128" rel="icon" />
+	</head>
+	<body id="page-top" class="text-center">
+		<div class="container">
+			<div id="notfound">
+			    <div class="notfound">
+			        <div class="notfound-404"></div>
+			        	{% block main %} {% endblock main %}
+			    </div>
+			</div>
+		</div>
+		{% compress js %}
+		    <script src="{% static 'js/jquery-3.6.0.slim.min.js' %}"></script>
+			<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+			<script src="{% static 'js/core.js' %}"></script>
+			{% block javascripts %} {% endblock javascripts %}
+ 		{% endcompress %}
+	</body>
+</html>

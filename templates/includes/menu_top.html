@@ -1,0 +1,40 @@
+
+{# ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- #}
+
+<!-- Navbar top -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="/">
+            <i class="fas fa-cube fa-2x text-secondary"></i>
+            <span class="nav_title">Generic app</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler_menutop" aria-controls="navbarToggler_menutop" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarToggler_menutop">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                {% if user.is_authenticated %}
+                    <li>
+                        <a class="dropdown-item" href="{% url 'actionLogout' %}">Logout
+                        </a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a class="dropdown-item" href="{% url 'actionSignin' %}">
+                            Sign in
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="{% url 'actionSignup' %}">
+                            Sign up
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+
+    </div>
+</nav>
