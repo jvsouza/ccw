@@ -1,4 +1,4 @@
-# completionOfCourseWork
+# CCW
 Repository with references, documentation and proposed solution for the Completion of Course Work (CCW)
 
 ## Brief structure of folders and files
@@ -46,7 +46,7 @@ app
 - [Vitrualenv](https://virtualenv.pypa.io/)
 
 ## Installation;
-1. [Clone](https://github.com/jvsouza/completionOfCourseWork.git) | [download](https://github.com/jvsouza/completionOfCourseWork/archive/refs/heads/main.zip) the repository;
+1. [Clone](https://github.com/jvsouza/ccw.git) | [download](https://github.com/jvsouza/ccw/archive/refs/heads/main.zip) the repository;
 
 2. Make a virtual environment;
 	```sh
@@ -70,12 +70,12 @@ app
 - [Heroku platform](https://jvsouza-ccw.herokuapp.com/)
 
 ## Shields
-[![](https://img.shields.io/github/languages/top/jvsouza/completionOfCourseWork)]()
-[![](https://img.shields.io/github/languages/count/jvsouza/completionOfCourseWork)]()
-[![](https://img.shields.io/github/license/jvsouza/completionOfCourseWork)]()
-[![](https://img.shields.io/github/languages/code-size/jvsouza/completionOfCourseWork)]()
-[![](https://img.shields.io/github/repo-size/jvsouza/completionOfCourseWork)]()
-[![](https://img.shields.io/github/last-commit/jvsouza/completionOfCourseWork)]()
+[![](https://img.shields.io/github/languages/top/jvsouza/ccw)]()
+[![](https://img.shields.io/github/languages/count/jvsouza/ccw)]()
+[![](https://img.shields.io/github/license/jvsouza/ccw)]()
+[![](https://img.shields.io/github/languages/code-size/jvsouza/ccw)]()
+[![](https://img.shields.io/github/repo-size/jvsouza/ccw)]()
+[![](https://img.shields.io/github/last-commit/jvsouza/ccw)]()
 
 ## Badges 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
