@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = 'django-insecure-zfu0b%^gnkh70550rod5j)o!d(u$ou51gibj%fwbvbxh1!88e7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Allowed hosts
 ALLOWED_HOSTS = ['*']
@@ -26,8 +26,6 @@ INSTALLED_APPS = [
     'active_link',
     'compressor',
     'core',
-    'cssmin',
-    'jsmin',
 ]
 
 # Middleware
@@ -112,6 +110,12 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets/static_prod')
 STATICFILES_DIRS = ( os.path.join(BASE_DIR,'assets/static_dev'), )
 
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+)
+
 # Compress files (Css, JavaScript)
 COMPRESS_ENABLE = True
 COMPRESS_OUTPUT_DIR = 'compressed' # Default: 'CACHE'
@@ -119,12 +123,6 @@ COMPRESS_STORAGE = 'compressor.storage.GzipCompressorFileStorage'
 COMPRESS_CSS_FILTERS = ["compressor.filters.cssmin.CSSMinFilter"]
 COMPRESS_JS_FILTERS = ["compressor.filters.jsmin.JSMinFilter"]
 
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    # other finders..
-    'compressor.finders.CompressorFinder',
-)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -141,9 +139,7 @@ MESSAGE_TAGS = {
 
 LOGIN_URL = '/'
 
-INTERNAL_IPS = [
-    '127.0.0.1',
-]
+INTERNAL_IPS = [ '127.0.0.1', ]
 
 JSON_LD_EMPTY_INPUT_RENDERING = 'silent'
 
