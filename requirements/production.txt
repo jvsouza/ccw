@@ -1,3 +1,4 @@
 -r common.txt
+django-environ==0.8.1
 gunicorn==20.1.0
 whitenoise==5.3.0
